@@ -4,6 +4,7 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+activate :livereload
 # Used with Rails Assets to fetch Tachyons
 activate :sprockets
 
