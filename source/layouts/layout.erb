@@ -8,7 +8,9 @@
     <%= stylesheet_link_tag "site" %>
   </head>
     <body class="sans-serif">
+      <%= partial 'partials/_header' %>
       <%= yield %>
+      <%= partial 'partials/_footer' %>
     </body>
     <%= javascript_include_tag "site" %>
 </html>
