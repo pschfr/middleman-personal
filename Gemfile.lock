@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     activesupport (5.0.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -73,6 +74,9 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-sprockets (4.1.1)
+      middleman-core (~> 4.0)
+      sprockets (>= 3.0)
     minitest (5.11.3)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -83,11 +87,15 @@ GEM
     parallel (1.12.1)
     public_suffix (3.0.3)
     rack (2.0.6)
+    rails-assets-tachyons-sass (4.9.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     sass (3.4.25)
     servolux (0.13.0)
+    sprockets (3.7.2)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
     temple (0.8.0)
     thor (0.20.3)
     thread_safe (0.3.6)
@@ -103,6 +111,8 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
+  middleman-sprockets
+  rails-assets-tachyons-sass!
   tzinfo-data
   wdm (~> 0.1)
 

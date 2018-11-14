@@ -4,6 +4,8 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+# Used with Rails Assets to fetch Tachyons
+activate :sprockets
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
