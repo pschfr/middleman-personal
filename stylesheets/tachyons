@@ -61,6 +61,8 @@ Backtrace:
 /var/lib/gems/2.5.0/gems/rack-2.0.6/lib/rack/urlmap.rb:68:in `block in call'
 /var/lib/gems/2.5.0/gems/rack-2.0.6/lib/rack/urlmap.rb:53:in `each'
 /var/lib/gems/2.5.0/gems/rack-2.0.6/lib/rack/urlmap.rb:53:in `call'
+/var/lib/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions/minify_javascript.rb:55:in `call'
+/var/lib/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/extensions/minify_css.rb:63:in `call'
 /var/lib/gems/2.5.0/gems/middleman-autoprefixer-2.9.0/lib/middleman-autoprefixer/extension.rb:48:in `call'
 /var/lib/gems/2.5.0/gems/middleman-core-4.2.1/lib/middleman-core/core_extensions/inline_url_rewriter.rb:74:in `call'
 /var/lib/gems/2.5.0/gems/rack-2.0.6/lib/rack/head.rb:12:in `call'
