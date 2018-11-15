@@ -1,4 +1,4 @@
-# middleman-personal
+# [middleman-personal](https://pschfr.github.io/middleman-personal/)
 Personal site built with Middleman. More to come.
 
 # Running Locally
