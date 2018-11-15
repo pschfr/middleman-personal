@@ -11,7 +11,11 @@
 			<li>
 			<h3>
 				<%= link_to(item.name, item.url) %>
-				<small><%= item.date %></small>
+				<small class="i">
+					<time datetime="<%= item.date %>">
+						<%= Date.parse(item.date).strftime('%b. %Y') %>
+					</time>
+				</small>
 			</h3>
 			<p class="mb0"><%= item.description %></p>
 			<% if item.source %>
