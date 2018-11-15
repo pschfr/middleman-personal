@@ -43,7 +43,6 @@
 	</ul>
 </section>
 
-
 <section id="contact">
 	<p>I'm across the web on <%= link_to('Twitter', 'https://twitter.com/' + data.global.username) %>, <%= link_to('Instagram', 'https://instagram.com/' + data.global.username) %>, <%= link_to('GitHub', 'https://github.com/' + data.global.username) %>, and probably elsewhere as <%= data.global.username %>.</p>
 
@@ -52,3 +51,14 @@
 	<p>You can contact me via email at <%= link_to(data.global.email, 'mailto:' + data.global.email) %>, or message me on <%= link_to('Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510') %> or <%= link_to('Facebook', 'https://m.me/' + data.global.username) %>.</p>
 </section>
 
+<section id="lastfm">
+	<p>
+		<span id="state">I last listened to: <br/></span>
+		<img id="cover" class="fl mt2 mr2 h2 w2" />
+		<span id="recenttracks">&hellip;</span>
+		<img src="images/scrobbling.gif" alt="Now Playing" title="Now Playing" id="nowplaying" style="display: none" />
+		<small id="since" class="db i" style="visibility: hidden">
+			That makes <span id="number"></span> tracks since Sept. 2012!
+		</small>
+	</p>
+</section>
