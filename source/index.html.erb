@@ -1,34 +1,40 @@
 ---
-title: middleman-personal
 ---
+<section id="intro">
+	<p>Hello! My name is Paul, and I am a web designer and developer from Pittsburgh, Pennsylvania. “What does that mean?” you may be asking yourself. In short, I create apps and websites.</p>
+</section>
 
-<h2>Work</h2>
-<ul class="unstyled pl0">
-  <% data.work.each do |item| %>
-    <li>
-      <h3>
-        <%= link_to(item.name, item.url, target: "_blank") %>
-        <small><%= item.date %></small>
-      </h3>
-      <p><%= item.description %></p>
-      <% if item.source %>
-        <%= link_to("View Source", item.source, target: "_blank") %>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+<section id="work">
+	<h2>Work</h2>
+	<ul class="list pl0">
+		<% data.work.each do |item| %>
+			<li>
+			<h3>
+				<%= link_to(item.name, item.url, target: "_blank") %>
+				<small><%= item.date %></small>
+			</h3>
+			<p class="mb0"><%= item.description %></p>
+			<% if item.source %>
+				<small><%= link_to("View Source", item.source, target: "_blank") %></small>
+			<% end %>
+			</li>
+		<% end %>
+	</ul>
+</section>
 
-<h2>Labs</h2>
-<ul class="unstyled pl0">
-  <% data.labs.each do |item| %>
-    <li>
-      <h3>
-          <%= link_to(item.name, item.url, target: "_blank") %>
-      </h3>
-      <p><%= item.description %></p>
-      <% if item.source %>
-        <%= link_to("View Source", item.source, target: "_blank") %>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+<section id="labs">
+	<h2>Labs</h2>
+	<ul class="list pl0">
+	<% data.labs.each do |item| %>
+		<li>
+		<h3>
+			<%= link_to(item.name, item.url, target: "_blank") %>
+		</h3>
+		<p class="mb0"><%= item.description %></p>
+		<% if item.source %>
+			<small><%= link_to("View Source", item.source, target: "_blank") %></small>
+		<% end %>
+		</li>
+	<% end %>
+	</ul>
+</section>

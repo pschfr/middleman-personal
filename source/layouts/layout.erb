@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || data.global.name %></title>
     <%= stylesheet_link_tag "site" %>
   </head>
-    <body class="sans-serif">
+    <body class="sans-serif bg-moon-gray lh-copy mw6 pa3">
       <%= partial 'partials/_header' %>
       <%= yield %>
       <%= partial 'partials/_footer' %>
