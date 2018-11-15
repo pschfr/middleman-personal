@@ -10,12 +10,12 @@
 		<% data.work.each do |item| %>
 			<li>
 			<h3>
-				<%= link_to(item.name, item.url, target: "_blank") %>
+				<%= link_to(item.name, item.url) %>
 				<small><%= item.date %></small>
 			</h3>
 			<p class="mb0"><%= item.description %></p>
 			<% if item.source %>
-				<small><%= link_to("View Source", item.source, target: "_blank") %></small>
+				<small><%= link_to("View Source", item.source) %></small>
 			<% end %>
 			</li>
 		<% end %>
@@ -28,13 +28,23 @@
 	<% data.labs.each do |item| %>
 		<li>
 		<h3>
-			<%= link_to(item.name, item.url, target: "_blank") %>
+			<%= link_to(item.name, item.url) %>
 		</h3>
 		<p class="mb0"><%= item.description %></p>
 		<% if item.source %>
-			<small><%= link_to("View Source", item.source, target: "_blank") %></small>
+			<small><%= link_to("View Source", item.source) %></small>
 		<% end %>
 		</li>
 	<% end %>
 	</ul>
 </section>
+
+
+<section id="contact">
+	<p>I'm across the web on <%= link_to('Twitter', 'https://twitter.com/' + data.global.username) %>, <%= link_to('Instagram', 'https://instagram.com/' + data.global.username) %>, <%= link_to('GitHub', 'https://github.com/' + data.global.username) %>, and probably elsewhere as <%= data.global.username %>.</p>
+
+	<p>For those interested, here is my <%= link_to('r&eacute;sum&eacute; as HTML', data.global.url + '/resume') %> or as <%= link_to('PDF', data.global.url + '/resume.pdf') %>.</p>
+
+	<p>You can contact me via email at <%= link_to(data.global.email, 'mailto:' + data.global.email) %>, or message me on <%= link_to('Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510') %> or <%= link_to('Facebook', 'https://m.me/' + data.global.username) %>.</p>
+</section>
+
