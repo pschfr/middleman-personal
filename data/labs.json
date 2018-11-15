@@ -1,5 +1,17 @@
 [
 	{
+		"name": "Start",
+		"url": "https://pschfr.github.io/start/dist/",
+		"source": "https://github.com/pschfr/start",
+		"description": "This is probably my most popular project! It's a personal new tab page with keyboard navigation, bookmarks, weather, quote, most recently listened to song, unread emails, and an image background."
+	},
+	{
+		"name": "Dashboard",
+		"url": "http://paulmakesthe.net/dash/",
+		"source": "https://github.com/pschfr/dashboard",
+		"description": "This does a lot! Loads in the time, Philips Hue light status (only in my house), weather from OpenWeatherMap, last song from Last.fm, Google Cast details, etc."
+	},
+	{
 		"name": "Now Playing",
 		"url": "https://paulmakesthe.net/now-playing/",
 		"source": "https://github.com/pschfr/now-playing",

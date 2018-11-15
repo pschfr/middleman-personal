@@ -1,5 +1,12 @@
 [
 	{
+		"name": "Jerod Shreckengast, Creative Freelancer",
+		"url": "https://shreckreations.com/",
+		"date": "2018-05-16",
+		"description": "A custom WordPress theme for my friend Jerod Shreckengast, written from scratch with Tachyons.",
+		"source": "https://github.com/pschfr/Shreckreations"
+	},
+	{
 		"name": "First Baptist Church of Lytle, TX",
 		"url": "https://firstbaptistchurchlytle.com/",
 		"date": "2017-07-21",

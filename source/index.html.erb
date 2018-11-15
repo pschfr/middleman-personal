@@ -4,8 +4,10 @@
 	<p>Hello! My name is Paul, and I am a web designer and developer from Pittsburgh, Pennsylvania. “What does that mean?” you may be asking yourself. In short, I create apps and websites.</p>
 </section>
 
+<hr>
+
 <section id="work">
-	<h2>Work</h2>
+	<h2>Client Work</h2>
 	<ul class="list pl0">
 		<% data.work.each do |item| %>
 			<li>
@@ -26,8 +28,10 @@
 	</ul>
 </section>
 
+<hr>
+
 <section id="labs">
-	<h2>Labs</h2>
+	<h2>Open-Source Experiments</h2>
 	<ul class="list pl0">
 	<% data.labs.each do |item| %>
 		<li>
@@ -43,6 +47,8 @@
 	</ul>
 </section>
 
+<hr>
+
 <section id="contact">
 	<p>I'm across the web on <%= link_to('Twitter', 'https://twitter.com/' + data.global.username) %>, <%= link_to('Instagram', 'https://instagram.com/' + data.global.username) %>, <%= link_to('GitHub', 'https://github.com/' + data.global.username) %>, and probably elsewhere as <%= data.global.username %>.</p>
 
@@ -50,6 +56,8 @@
 
 	<p>You can contact me via email at <%= link_to(data.global.email, 'mailto:' + data.global.email) %>, or message me on <%= link_to('Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510') %> or <%= link_to('Facebook', 'https://m.me/' + data.global.username) %>.</p>
 </section>
+
+<hr>
 
 <section id="lastfm">
 	<p>
