@@ -8,6 +8,11 @@ activate :livereload
 # Used with Rails Assets to fetch Tachyons
 activate :sprockets
 
+# Fixes issues with GitHub pages
+# https://github.com/edgecase/middleman-gh-pages#project-page-path-issues
+activate :relative_assets
+set :relative_links, true
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
