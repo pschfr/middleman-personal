@@ -11,3 +11,6 @@ gem "middleman-sprockets"
 source "https://rails-assets.org" do
 	gem "rails-assets-tachyons-sass"
 end
+
+# GitHub Pages support and config
+gem 'middleman-gh-pages'
