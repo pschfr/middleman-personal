@@ -36,6 +36,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
+    htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     kramdown (1.17.0)
@@ -85,6 +86,9 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-minify-html (3.4.1)
+      htmlcompressor (~> 0.2.0)
+      middleman-core (>= 3.2)
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -127,6 +131,7 @@ DEPENDENCIES
   middleman-autoprefixer (~> 2.7)
   middleman-gh-pages
   middleman-livereload
+  middleman-minify-html
   middleman-sprockets
   rails-assets-tachyons-sass!
   tzinfo-data

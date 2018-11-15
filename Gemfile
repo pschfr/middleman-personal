@@ -12,5 +12,8 @@ source "https://rails-assets.org" do
 	gem "rails-assets-tachyons-sass"
 end
 
+# Minifes HTML
+gem 'middleman-minify-html'
+
 # GitHub Pages support and config
 gem 'middleman-gh-pages'
