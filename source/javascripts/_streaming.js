@@ -20,7 +20,7 @@ function lastFM_request() {
 				cover.alt = album;
 				cover.title = album;
 			} else { // or print blank album cover
-				cover.src = "img/no-cover.png";
+				cover.src = "images/no-cover.png";
 				cover.alt = "No Cover";
 			}
 
