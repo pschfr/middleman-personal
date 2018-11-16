@@ -134,8 +134,6 @@ DEPENDENCIES
   middleman-minify-html
   middleman-sprockets
   rails-assets-tachyons-sass!
-  tzinfo-data
-  wdm (~> 0.1)
 
 BUNDLED WITH
    1.16.6
