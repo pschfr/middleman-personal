@@ -12,6 +12,7 @@
     canvas.style.height = "100vh";
     canvas.style.zIndex = 1;
     canvas.style.userSelect = "none";
+    canvas.style.display = "inline-block";
 
     function canvasResize(){
         canvas.height = canvas.offsetHeight;
