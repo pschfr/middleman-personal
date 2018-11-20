@@ -45,6 +45,9 @@ page '/*.txt', layout: false
 #   end
 # end
 
+require "lib/custom_helpers"
+helpers Last_FM_API_Helper
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
