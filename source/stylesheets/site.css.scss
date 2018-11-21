@@ -2,4 +2,8 @@
 
 a {
 	@extend .link, .underline-hover;
+	// Fixes transition on links with .grow
+	&.grow {
+		transition: all 0.15s;
+	}
 }
