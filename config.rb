@@ -46,6 +46,11 @@ page '/*.txt', layout: false
 
 require "lib/custom_helpers"
 helpers Last_FM_API_Helper
+helpers Instagram_API_Helper
+
+InstagramApi.config do |config|
+  config.access_token = '2092274.1677ed0.58ecb89ee52c47ab8ac5797f7564165c'
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
@@ -57,5 +62,6 @@ configure :build do
 end
 
 configure :development do
+  require "awesome_print"
   activate :livereload
 end

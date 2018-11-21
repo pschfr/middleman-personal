@@ -18,3 +18,5 @@ gem 'middleman-gh-pages'
 
 # Dependencies for my custom helpers
 gem 'http'
+gem 'awesome_print'
+gem 'instagram_api_client'
