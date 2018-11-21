@@ -1,13 +1,12 @@
 # Require dependencies
 require 'http'
 require 'json'
-require 'awesome_print'
 
 module Last_FM_API_Helper
 	# Constants
 	API_URL = 'https://ws.audioscrobbler.com/2.0/'
 	API_KEY = '0f680404e39c821cac34008cc4d803db'
-	API_LIMIT = 5
+	API_LIMIT = 10
 	API_USER = 'paul_r_schaefer'
 	API_METHOD = 'user.gettopartists'
 
@@ -23,13 +22,11 @@ module Last_FM_API_Helper
 
 		if response.code == 200
 			parsed = JSON.parse(response.to_s)['topartists']['artist']
-			# Print stuff
-			for artist in parsed
-				ap artist
-			end
+			# I previously thought I would have to loop over the artists here,
+			# but it was easier to do in partials/_artists.erb.
 		else
 			# print error message
-			puts 'Error'
+			puts 'Error Code ' + response.code.to_s
 		end
 	end
 end

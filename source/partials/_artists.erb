@@ -1,0 +1,8 @@
+<section id="artists">
+	<h3>My Favorite Artists</h3>
+	<% fetch_artists.each do |artist| %>
+		<img src="<%= artist['image'].last['#text'] %>" alt="<%= artist['name'] %>" title="<%= artist['name'] %>" />
+		<%= artist['name'] %>
+		<small><%= number_with_delimiter(artist['playcount']) %></small>
+	<% end %>
+</section>

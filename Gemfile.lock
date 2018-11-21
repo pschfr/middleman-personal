@@ -11,7 +11,6 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     autoprefixer-rails (8.6.5)
       execjs
-    awesome_print (1.8.0)
     backports (3.11.4)
     coffee-script (2.4.1)
       coffee-script-source
@@ -141,7 +140,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  awesome_print
   http
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
