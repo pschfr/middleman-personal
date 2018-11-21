@@ -30,9 +30,3 @@ module Last_FM_API_Helper
 		end
 	end
 end
-
-module Instagram_API_Helper
-	def print_shots
-		puts "SHOTS"
-	end
-end

@@ -46,8 +46,8 @@ page '/*.txt', layout: false
 
 require "lib/custom_helpers"
 helpers Last_FM_API_Helper
-helpers Instagram_API_Helper
 
+# Instagram gem configuration
 InstagramApi.config do |config|
   config.access_token = '2092274.1677ed0.58ecb89ee52c47ab8ac5797f7564165c'
 end
