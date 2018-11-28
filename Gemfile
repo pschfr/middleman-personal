@@ -20,3 +20,5 @@ gem 'middleman-gh-pages'
 gem 'http'
 gem 'awesome_print'
 gem 'instagram_api_client'
+
+gem 'material_design_lite-sass'

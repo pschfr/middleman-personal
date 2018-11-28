@@ -9,6 +9,16 @@
 				<li class="dib mr2"><%= link_to 'Labs', '#labs', { class: "navy underline-hover ttu" } %></li>
 				<li class="dib mr2"><%= link_to 'Contact', '#contact', { class: "navy underline-hover ttu" } %></li>
 			</ul>
+			<ul class="list pl0">
+				<li>
+					<i class="material-icons v-btm">email</i>
+					<%= link_to data.global.email, 'mailto:' + data.global.email, { class: "navy underline-hover ttu" } %>
+				</li>
+				<li>
+					<i class="material-icons v-btm">message</i>
+					<%= link_to '@' + data.global.username, 'https://twitter.com/messages/compose?recipient_id=156735510', { class: "navy underline-hover ttu" } %>
+				</li>
+			</ul>
 		</nav>
 	</div>
 </header>
