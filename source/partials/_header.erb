@@ -1,5 +1,14 @@
-<header id="top">
-	<h1 class="mv0"><%= data.global.name %></h1>
-	<h3 class="mt0"><%= data.global.tagline %></h3>
-	<hr>
+<header id="top" class="w-100 vh-100 vh-75-ns dt ph3 pv4 f1 lh-title bg-blue lightest-blue chakra-petch">
+	<div class="v-mid dtc">
+		<h1 class="mv0"><%= data.global.name %></h1>
+		<h3 class="mt0 normal"><%= data.global.tagline %></h3>
+		<nav class="f4 b">
+			<ul class="list pl0">
+				<li class="dib mr2"><%= link_to 'About', '#intro', { class: "navy underline-hover ttu" } %></li>
+				<li class="dib mr2"><%= link_to 'Work', '#work', { class: "navy underline-hover ttu" } %></li>
+				<li class="dib mr2"><%= link_to 'Labs', '#labs', { class: "navy underline-hover ttu" } %></li>
+				<li class="dib mr2"><%= link_to 'Contact', '#contact', { class: "navy underline-hover ttu" } %></li>
+			</ul>
+		</nav>
+	</div>
 </header>

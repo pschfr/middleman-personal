@@ -1,5 +1,9 @@
 @import '_tachyons.scss';
 
+.chakra-petch {
+	font-family: 'Chakra Petch', sans-serif;
+}
+
 a {
 	@extend .link, .underline-hover;
 	// Fixes transition on links with .grow

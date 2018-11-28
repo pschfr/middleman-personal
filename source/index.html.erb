@@ -1,12 +1,12 @@
 ---
 ---
-<section id="intro">
+<section id="intro" class="pa3 bg-lightest-blue">
 	<p>Hello! My name is Paul, and I am a web designer and developer from Pittsburgh, Pennsylvania. “What does that mean?” you may be asking yourself. In short, I create apps and websites.</p>
 </section>
 
 <hr>
 
-<section id="work">
+<section id="work" class="pa3">
 	<h2>Client Work</h2>
 	<ul class="list pl0">
 		<% data.work.each do |item| %>
@@ -30,7 +30,7 @@
 
 <hr>
 
-<section id="labs">
+<section id="labs" class="pa3">
 	<h2>Open-Source Experiments</h2>
 	<ul class="list pl0">
 	<% data.labs.each do |item| %>
@@ -49,7 +49,7 @@
 
 <hr>
 
-<section id="contact">
+<section id="contact" class="pa3">
 	<p>I'm across the web on <%= link_to('Twitter', 'https://twitter.com/' + data.global.username) %>, <%= link_to('Instagram', 'https://instagram.com/' + data.global.username) %>, <%= link_to('GitHub', 'https://github.com/' + data.global.username) %>, and probably elsewhere as <%= data.global.username %>.</p>
 
 	<p>For those interested, here is my <%= link_to('r&eacute;sum&eacute; as HTML', data.global.url + '/resume') %> or as <%= link_to('PDF', data.global.url + '/resume.pdf') %>.</p>
@@ -59,7 +59,7 @@
 
 <hr>
 
-<section id="lastfm">
+<section id="lastfm" class="pa3">
 	<p>
 		<span id="state">I last listened to: <br/></span>
 		<img id="cover" class="fl mt2 mr2 h2 w2" />
