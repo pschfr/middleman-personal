@@ -2,25 +2,25 @@
 	<div class="v-mid dtc">
 		<h1 class="mv0"><%= data.global.name %></h1>
 		<h3 class="mt0 normal"><%= data.global.tagline %></h3>
-		<nav class="f4 b">
+		<nav class="f4 b navy ttu">
 			<ul class="list pl0">
-				<li class="dib mr2"><%= link_to 'About', '#intro', { class: "navy underline-hover ttu" } %></li>
-				<li class="dib mr2"><%= link_to 'Work', '#work', { class: "navy underline-hover ttu" } %></li>
-				<li class="dib mr2"><%= link_to 'Labs', '#labs', { class: "navy underline-hover ttu" } %></li>
-				<li class="dib mr2"><%= link_to 'Contact', '#contact', { class: "navy underline-hover ttu" } %></li>
+				<li class="dib mr2"><%= link_to 'About', '#intro' %></li>
+				<li class="dib mr2"><%= link_to 'Work', '#work' %></li>
+				<li class="dib mr2"><%= link_to 'Labs', '#labs' %></li>
+				<li class="dib mr2"><%= link_to 'Contact', '#contact' %></li>
 			</ul>
 			<ul class="list pl0">
 				<li>
-					<i class="material-icons v-btm">email</i>
-					<%= link_to data.global.email, 'mailto:' + data.global.email, { class: "navy underline-hover ttu" } %>
+					<i class="material-icons v-btm lightest-blue">email</i>
+					<%= link_to data.global.email, 'mailto:' + data.global.email %>
 				</li>
 				<li>
-					<i class="material-icons v-btm">message</i>
-					<%= link_to '@' + data.global.username + ' on Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510', { class: "navy underline-hover ttu" } %>
+					<i class="material-icons v-btm lightest-blue">message</i>
+					<%= link_to '@' + data.global.username + ' on Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510' %>
 				</li>
 				<li>
-					<i class="material-icons v-btm">message</i>
-					<%= link_to data.global.username + ' on Facebook', 'https://m.me/' + data.global.username, { class: "navy underline-hover ttu" } %>
+					<i class="material-icons v-btm lightest-blue">message</i>
+					<%= link_to data.global.username + ' on Facebook', 'https://m.me/' + data.global.username %>
 				</li>
 			</ul>
 		</nav>

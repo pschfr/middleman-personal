@@ -6,11 +6,11 @@
 	</p>
 </section>
 
-<section id="work" class="pa3 bg-dark-blue washed-blue">
-	<h2 class="chakra-petch">Client Work</h2>
+<section id="work" class="bg-dark-blue washed-blue">
+	<h2 class="chakra-petch ph3">Client Work</h2>
 	<ul class="list pl0">
 		<% data.work.each do |item| %>
-			<li class="db fl w-50-ns w-100">
+			<li class="db fl w-50-ns w-100 pa3">
 				<h3 class="chakra-petch">
 					<%= link_to item.name, item.url %>
 					<small class="i">
@@ -29,11 +29,11 @@
 	</ul>
 </section>
 
-<section id="labs" class="pa3 bg-washed-blue navy">
-	<h2 class="chakra-petch">Open-Source Experiments</h2>
+<section id="labs" class="bg-washed-blue navy">
+	<h2 class="chakra-petch ph3">Open-Source Experiments</h2>
 	<ul class="list pl0">
 		<% data.labs.each do |item| %>
-			<li class="db fl w-50-ns w-100">
+			<li class="db fl w-50-ns w-100 pa3">
 				<h3 class="chakra-petch">
 					<%= link_to item.name, item.url %>
 				</h3>
