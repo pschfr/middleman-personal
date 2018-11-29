@@ -6,6 +6,13 @@ $sans-serif: -apple-system, BlinkMacSystemFont, 'Roboto', 'avenir next', avenir,
 @import '_tachyons.scss';
 
 // Any further utility classes and extensions
+
+// Native smooth scrolling for #work, #contact, etc.
+html {
+	scroll-behavior: smooth;
+}
+
+// Google Font with fallback
 .chakra-petch {
 	font-family: 'Chakra Petch', $sans-serif;
 }

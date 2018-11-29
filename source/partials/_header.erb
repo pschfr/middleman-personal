@@ -1,4 +1,4 @@
-<header id="top" class="w-100 vh-100 vh-75-ns dt ph3 pv4 f1 lh-title bg-blue lightest-blue chakra-petch">
+<header class="w-100 vh-100 vh-75-ns dt ph3 pv4 f1-ns f2 lh-title bg-blue lightest-blue chakra-petch">
 	<div class="v-mid dtc">
 		<h1 class="mv0"><%= data.global.name %></h1>
 		<h3 class="mt0 normal"><%= data.global.tagline %></h3>
@@ -16,7 +16,11 @@
 				</li>
 				<li>
 					<i class="material-icons v-btm">message</i>
-					<%= link_to '@' + data.global.username, 'https://twitter.com/messages/compose?recipient_id=156735510', { class: "navy underline-hover ttu" } %>
+					<%= link_to '@' + data.global.username + ' on Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510', { class: "navy underline-hover ttu" } %>
+				</li>
+				<li>
+					<i class="material-icons v-btm">message</i>
+					<%= link_to data.global.username + ' on Facebook', 'https://m.me/' + data.global.username, { class: "navy underline-hover ttu" } %>
 				</li>
 			</ul>
 		</nav>

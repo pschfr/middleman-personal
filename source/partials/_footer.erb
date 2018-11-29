@@ -1,13 +1,15 @@
-<footer class="i f6">
-	<hr>
-	<p class="mb0">
+<footer class="bg-black silver tc pa3 chakra-petch">
+	<p>
 		Last updated on
 		<time datetime="<%= DateTime.now %>">
 			<%= DateTime.now.strftime('%b. %d, %Y') %>.
 		</time>
 		<br/>
-		This site (and many like it) is open-source on <%= link_to('GitHub', data.global.source) %>.
+		This site (and many like it) is open-source on <%= link_to 'GitHub', data.global.source, { class: "color-inherit underline dim" } %>.
 		<br/>
 		Have a nice <span id="day">day</span>.
+	</p>
+	<p class="mb0">
+		Beam me back <%= link_to 'up', '#', { class: "color-inherit underline dim" } %>.
 	</p>
 </footer>
