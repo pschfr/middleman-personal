@@ -44,7 +44,7 @@ page '/*.txt', layout: false
 #   end
 # end
 
-require "lib/custom_helpers"
+require "lib/last_fm.rb"
 helpers Last_FM_API_Helper
 
 # Instagram gem configuration
