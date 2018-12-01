@@ -1,6 +1,5 @@
 <section id="instagram">
 	<% InstagramApi.user.recent_media(count: 8)['data'].each do |shot| %>
-		<% ap shot %>
 		<% link_to(shot.link, {class: "grow dib tc w-50-ns w-100 pa2 mb4"}) do %>
 			<%= image_tag(shot['images']['low_resolution']['url'], class:"mw-100") %>
 			<small>
