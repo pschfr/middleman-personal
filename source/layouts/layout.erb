@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="theme-color" content="#357edd">
 		<title><%= current_page.data.title || data.global.name %></title>
-		<%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Chakra+Petch:n,i,b" %>
+		<%= stylesheet_link_tag google_fonts_stylesheet_url %>
 		<%= stylesheet_link_tag "site" %>
+		<%= google_fonts_CSS_class %>
 		<%= javascript_include_tag "site", defer: true %>
 	</head>
 	<body class="sans-serif lh-copy">
@@ -16,7 +17,5 @@
 			<%= yield %>
 		</main>
 		<%= partial 'partials/_footer' %>
-		<%= google_font_class_name %>
-		<%= google_fonts_stylesheet_url %>
 	</body>
 </html>

@@ -7,11 +7,11 @@
 </section>
 
 <section id="work" class="bg-dark-blue washed-blue">
-	<h2 class="chakra-petch ph3">Client Work</h2>
+	<h2 class="<%= google_font_class_name %> ph3">Client Work</h2>
 	<ul class="list pl0">
 		<% data.work.each do |item| %>
 			<li class="db fl w-50-ns w-100 pa3">
-				<h3 class="chakra-petch">
+				<h3 class="<%= google_font_class_name %>">
 					<%= link_to item.name, item.url %>
 					<small class="i">
 						<time datetime="<%= item.date %>">
@@ -30,11 +30,11 @@
 </section>
 
 <section id="labs" class="bg-washed-blue navy">
-	<h2 class="chakra-petch ph3">Open-Source Experiments</h2>
+	<h2 class="<%= google_font_class_name %> ph3">Open-Source Experiments</h2>
 	<ul class="list pl0">
 		<% data.labs.each do |item| %>
 			<li class="db fl w-50-ns w-100 pa3">
-				<h3 class="chakra-petch">
+				<h3 class="<%= google_font_class_name %>">
 					<%= link_to item.name, item.url %>
 				</h3>
 				<p class="mb0"><%= item.description %></p>
