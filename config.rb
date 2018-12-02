@@ -45,7 +45,9 @@ page '/*.txt', layout: false
 # end
 
 require "lib/last_fm.rb"
+require "lib/google_fonts.rb"
 helpers Last_FM_API_Helper
+helpers Google_Fonts_Helper
 
 # Instagram gem configuration
 InstagramApi.config do |config|
