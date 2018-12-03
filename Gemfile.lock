@@ -135,6 +135,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    require_all (2.0.0)
     sass (3.4.25)
     servolux (0.13.0)
     sprockets (3.7.2)
@@ -167,6 +168,7 @@ DEPENDENCIES
   middleman-minify-html
   middleman-sprockets
   rails-assets-tachyons-sass!
+  require_all
 
 BUNDLED WITH
    1.16.6

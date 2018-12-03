@@ -44,8 +44,8 @@ page '/*.txt', layout: false
 #   end
 # end
 
-require "lib/last_fm.rb"
-require "lib/google_fonts.rb"
+require 'require_all'
+require_all 'lib'
 helpers Last_FM_API_Helper
 helpers Google_Fonts_Helper
 
