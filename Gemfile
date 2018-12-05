@@ -19,6 +19,5 @@ gem 'middleman-gh-pages'
 # Dependencies for my custom helpers
 gem 'http'
 gem 'require_all'
-gem 'awesome_print'
 gem 'instagram_api_client'
 gem 'material_design_lite-sass'

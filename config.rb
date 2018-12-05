@@ -1,4 +1,4 @@
-# Require global dependencies
+# Require global dependencies and helpers
 require 'require_all'
 require_all 'lib'
 
@@ -23,12 +23,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
-helpers Last_FM_API_Helper
-helpers Google_Fonts_Helper
-
 # Instagram gem configuration
 # https://github.com/agilie/instagram_api_gem
 InstagramApi.config do |config|
@@ -44,6 +38,5 @@ configure :build do
 end
 
 configure :development do
-  require "awesome_print"
   activate :livereload
 end

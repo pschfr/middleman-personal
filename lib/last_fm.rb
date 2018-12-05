@@ -1,8 +1,9 @@
-# Require dependencies
 require 'http'
 require 'json'
 
 module Last_FM_API_Helper
+	puts "== Last_FM_API_Helper is loading"
+
 	# Constants
 	API_URL = 'https://ws.audioscrobbler.com/2.0/'
 	API_KEY = '0f680404e39c821cac34008cc4d803db'

@@ -1,7 +1,8 @@
-# Require dependencies
 require 'json'
 
 module Google_Fonts_Helper
+	puts "== Google_Fonts_Helper is loading"
+
 	# Google Fonts API URL
 	GOOGLE_APIS = 'https://fonts.googleapis.com/css?family='
 
