@@ -63,6 +63,7 @@ GEM
       autoprefixer-rails (>= 6.5)
       sass (>= 3.3)
     memoist (0.16.0)
+    mercenary (0.3.6)
     middleman (4.3.0.rc.4)
       coffee-script (~> 2.2)
       haml (>= 4.0.5)
@@ -142,6 +143,9 @@ GEM
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
+    svgeez (2.0.0)
+      listen (~> 3.1)
+      mercenary (~> 0.3.6)
     temple (0.8.0)
     thor (0.20.3)
     thread_safe (0.3.6)
@@ -169,6 +173,7 @@ DEPENDENCIES
   middleman-sprockets
   rails-assets-tachyons-sass!
   require_all
+  svgeez (~> 2.0)
 
 BUNDLED WITH
    1.17.1

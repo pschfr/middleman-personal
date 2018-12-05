@@ -28,6 +28,7 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/basics/helper-methods/
 helpers Last_FM_API_Helper
 helpers Google_Fonts_Helper
+helpers SVG_Icons_Helper
 
 # Instagram gem configuration
 # https://github.com/agilie/instagram_api_gem
