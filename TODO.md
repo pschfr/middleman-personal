@@ -1,3 +1,3 @@
 - [x] Move Instagram and Last.fm access tokens to hidden .config file
-- [ ] Finish formatting SVG icons
+- [x] Finish formatting SVG icons
 - [ ] Finish the work, labs, Last.fm, and Instagram sections

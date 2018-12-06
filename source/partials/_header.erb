@@ -9,17 +9,17 @@
 				<li class="dib mr2"><%= link_to 'Labs', '#labs' %></li>
 				<li class="dib mr2"><%= link_to 'Contact', '#contact' %></li>
 			</ul>
-			<ul class="list pl0">
+			<ul class="list pl0 lh-copy">
 				<li>
-					<%= svg_icon 'envelope-solid' %>
+					<%= svg_icon 'email', 'lightest-blue' %>
 					<%= link_to data.global.email, 'mailto:' + data.global.email %>
 				</li>
 				<li>
-					<%= svg_icon 'twitter' %>
+					<%= svg_icon 'twitter', 'lightest-blue' %>
 					<%= link_to '@' + data.global.username + ' on Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510' %>
 				</li>
 				<li>
-					<%= svg_icon 'facebook-messenger' %>
+					<%= svg_icon 'facebook-messenger', 'lightest-blue' %>
 					<%= link_to data.global.username + ' on Facebook', 'https://m.me/' + data.global.username %>
 				</li>
 			</ul>

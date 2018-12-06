@@ -15,7 +15,12 @@ module SVG_Icons_Helper
 	end
 
 	# Outputs proper HTML for icon
-	def svg_icon(name)
-		return "<svg viewBox='0 0 100 100' class='dib'><use xlink:href='#_sprite-#{name}'></use></svg>"
+	def svg_icon(name, classes)
+		return %Q(
+			<svg viewBox='0 0 100 100' class='icon #{classes}'>
+				<title>#{name.gsub('-', ' ').titleize}</title>
+				<use xlink:href='#_sprite-#{name}'></use>
+			</svg>
+		)
 	end
 end
