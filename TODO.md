@@ -1,0 +1,1 @@
+- [ ] Move Instagram and Last.fm access tokens to hidden .config file
