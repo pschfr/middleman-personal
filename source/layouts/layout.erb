@@ -5,7 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="theme-color" content="#357edd">
-		<title><%= current_page.data.title || data.global.name %></title>
+		<title><%= current_page.data.title || "#{data.global.name} &mdash; #{data.global.tagline}" %></title>
 		<%= stylesheet_link_tag google_fonts_stylesheet_url %>
 		<%= stylesheet_link_tag "site" %>
 		<%= google_fonts_CSS_class %>
