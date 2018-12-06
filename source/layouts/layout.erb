@@ -12,11 +12,11 @@
 		<%= javascript_include_tag "site", defer: true %>
 	</head>
 	<body class="sans-serif lh-copy">
+		<%= svg_icon_sprite %>
 		<%= partial 'partials/_header' %>
 		<main>
 			<%= yield %>
 		</main>
 		<%= partial 'partials/_footer' %>
-		<%= svg_icon_sprite %>
 	</body>
 </html>
