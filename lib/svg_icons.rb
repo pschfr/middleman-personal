@@ -13,4 +13,9 @@ module SVG_Icons_Helper
 	def svg_icon_sprite
 		return File.read SPRITE
 	end
+
+	# Outputs proper HTML for icon
+	def svg_icon(name)
+		return "<svg viewBox='0 0 100 100' class='dib'><use xlink:href='#_sprite-#{name}'></use></svg>"
+	end
 end
