@@ -45,5 +45,5 @@ configure :build do
 end
 
 configure :development do
-  activate :livereload
+  # activate :livereload
 end
