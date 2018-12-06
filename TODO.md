@@ -1,3 +1,4 @@
 - [x] Move Instagram and Last.fm access tokens to hidden .config file
 - [x] Finish formatting SVG icons
 - [ ] Finish the work, labs, Last.fm, and Instagram sections
+- [ ] Replace no-cover.png and scrobbling.gif with SVGs
