@@ -11,15 +11,15 @@
 			</ul>
 			<ul class="list pl0">
 				<li>
-					<i class="material-icons v-btm lightest-blue">email</i>
+					<%= svg_icon 'envelope-solid' %>
 					<%= link_to data.global.email, 'mailto:' + data.global.email %>
 				</li>
 				<li>
-					<i class="material-icons v-btm lightest-blue">message</i>
+					<%= svg_icon 'twitter' %>
 					<%= link_to '@' + data.global.username + ' on Twitter', 'https://twitter.com/messages/compose?recipient_id=156735510' %>
 				</li>
 				<li>
-					<i class="material-icons v-btm lightest-blue">message</i>
+					<%= svg_icon 'facebook-messenger' %>
 					<%= link_to data.global.username + ' on Facebook', 'https://m.me/' + data.global.username %>
 				</li>
 			</ul>
