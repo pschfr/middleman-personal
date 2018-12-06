@@ -6,7 +6,7 @@ module Last_FM_API_Helper
 
 	# Constants
 	API_URL = 'https://ws.audioscrobbler.com/2.0/'
-	API_KEY = '0f680404e39c821cac34008cc4d803db'
+	API_KEY = JSON.parse(File.read('data/secret.json'))['lastfm']
 	API_LIMIT = 8
 	API_USER = 'paul_r_schaefer'
 	API_METHOD = 'user.gettopartists'

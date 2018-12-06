@@ -1,5 +1,6 @@
 # Require global dependencies and helpers
 require 'require_all'
+require 'json'
 require_all 'lib'
 
 # Activate and configure extensions
@@ -33,7 +34,7 @@ helpers SVG_Icons_Helper
 # Instagram gem configuration
 # https://github.com/agilie/instagram_api_gem
 InstagramApi.config do |config|
-  config.access_token = '2092274.1677ed0.58ecb89ee52c47ab8ac5797f7564165c'
+  config.access_token = JSON.parse(File.read('data/secret.json'))['instagram']
 end
 
 # Build-specific configuration
