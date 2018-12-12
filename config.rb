@@ -6,7 +6,7 @@ require_all 'lib'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
+  prefix.browsers = 'last 2 versions'
 end
 
 # Used with Rails Assets and Tachyons
@@ -27,9 +27,9 @@ page '/*.txt', layout: false
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
-helpers Last_FM_API_Helper
-helpers Google_Fonts_Helper
-helpers SVG_Icons_Helper
+helpers LastFmApiHelper
+helpers GoogleFontsHelper
+helpers SvgIconHelper
 
 # Instagram gem configuration
 # https://github.com/agilie/instagram_api_gem

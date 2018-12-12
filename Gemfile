@@ -5,9 +5,9 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-livereload'
 
 # Used to fetch the latest tachyons-sass
-gem "middleman-sprockets"
-source "https://rails-assets.org" do
-	gem "rails-assets-tachyons-sass"
+gem 'middleman-sprockets'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tachyons-sass'
 end
 
 # Minifes HTML
@@ -18,6 +18,6 @@ gem 'middleman-gh-pages'
 
 # Dependencies for my custom helpers
 gem 'http'
-gem 'require_all'
 gem 'instagram_api_client'
+gem 'require_all'
 gem 'svgeez', '~> 2.0'

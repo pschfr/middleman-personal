@@ -1,33 +1,31 @@
 require 'http'
 require 'json'
 
-module Last_FM_API_Helper
-	puts "== Last_FM_API_Helper is loading"
+# This requests my most scrobbled artists from Last.fm
+module LastFmApiHelper
+  puts '== Last.fm API Helper is loading'
 
-	# Constants
-	API_URL = 'https://ws.audioscrobbler.com/2.0/'
-	API_KEY = JSON.parse(File.read('data/secret.json'))['lastfm']
-	API_LIMIT = 8
-	API_USER = 'paul_r_schaefer'
-	API_METHOD = 'user.gettopartists'
+  # Actually make the request
+  RESPONSE = HTTP.get(
+    'https://ws.audioscrobbler.com/2.0/',
+    params: {
+      method: 'user.gettopartists',
+      user: 'paul_r_schaefer',
+      api_key: JSON.parse(File.read('data/secret.json'))['lastfm'],
+      limit: 8,
+      format: 'json'
+    }
+  ).freeze
 
-	def fetch_artists
-		# Actually make the request
-		response = HTTP.get(API_URL, :params => {
-			:method  => API_METHOD,
-			:user    => API_USER,
-			:api_key => API_KEY,
-			:limit   => API_LIMIT,
-			:format  => 'json'
-		})
-
-		if response.code == 200
-			parsed = JSON.parse(response.to_s)['topartists']['artist']
-			# I previously thought I would have to loop over the artists here,
-			# but it was easier to do in partials/_artists.erb.
-		else
-			# print error message
-			puts 'Error Code ' + response.code.to_s
-		end
-	end
+  # I previously thought I would have to loop over the artists here,
+  # but it was easier to do in partials/_artists.erb.
+  def artists
+    if RESPONSE.code == 200
+      # Return data to page
+      JSON.parse(RESPONSE.to_s)['topartists']['artist']
+    else
+      # print error message
+      "Error Code #{RESPONSE.code}"
+    end
+  end
 end
