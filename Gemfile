@@ -19,5 +19,6 @@ gem 'middleman-gh-pages'
 # Dependencies for my custom helpers
 gem 'http'
 gem 'instagram_api_client'
+gem 'middleman-meta-tags'
 gem 'require_all'
 gem 'svgeez', '~> 2.0'

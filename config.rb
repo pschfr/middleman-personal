@@ -17,6 +17,10 @@ activate :sprockets
 activate :relative_assets
 set :relative_links, true
 
+# Adds meta tags with magic
+# https://github.com/tiste/middleman-meta-tags
+activate :meta_tags
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 # Per-page layout changes
