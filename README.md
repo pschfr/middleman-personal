@@ -11,3 +11,6 @@ Personal site built with Middleman. More to come.
 Thanks to the [`middleman-gh-pages`](https://github.com/edgecase/middleman-gh-pages) gem, it's simple!
 1. `rake build` to compile to the build directory, and
 2. `rake publish` to build and publish to the `gh-pages` branch!
+
+# Other Notes
+- This depends on a .gitignored file called `secret.json`, so `secret.example.json` is provided as a template.
