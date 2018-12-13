@@ -1,4 +1,5 @@
 require 'json'
+require 'open-uri'
 
 # This helper makes it easier to change the Google Font included in the page.
 # Simply change it in data/global.json and this module does the rest.
@@ -16,18 +17,19 @@ module GoogleFontsHelper
   FONT_NAME   = CONFIG_DATA['google_fonts']['name']
   FONT_WEIGHT = CONFIG_DATA['google_fonts']['weights']
 
+  # Constructs the proper Google Fonts CSS URL
+  STYLE_URL = "#{GOOGLE_APIS}#{FONT_NAME.tr(' ', '+')}:#{FONT_WEIGHT}".freeze
+
+  # Saves it as _google_fonts.scss for usage in Sass
+  IO.copy_stream(open(STYLE_URL), 'source/stylesheets/_google_fonts.scss')
+
+  # Constructs the class for Tachyons-like usage, and appends it to the file.
+  open('source/stylesheets/_google_fonts.scss', 'a') do |f|
+    f.puts ".#{FONT_NAME.parameterize}{font-family:'#{FONT_NAME}',sans-serif}"
+  end
+
   # Outputs font name as class
-  def google_font_class_name
+  def google_font
     FONT_NAME.parameterize
-  end
-
-  # Outputs proper URL for the Google Fonts CSS
-  def google_fonts_stylesheet_url
-    "#{GOOGLE_APIS}#{FONT_NAME.tr(' ', '+')}:#{FONT_WEIGHT}"
-  end
-
-  # Outputs CSS class for Tachyons-like usage
-  def google_fonts_css_class
-    "<style>.#{FONT_NAME.parameterize}{font-family:'#{FONT_NAME}'}</style>"
   end
 end

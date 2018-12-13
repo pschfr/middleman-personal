@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chakra Petch Regular'), local('ChakraPetch-Regular'), url(https://fonts.gstatic.com/s/chakrapetch/v2/cIf6MapbsEk7TDLdtEz1BwkWn6pl.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Chakra Petch Bold'), local('ChakraPetch-Bold'), url(https://fonts.gstatic.com/s/chakrapetch/v2/cIflMapbsEk7TDLdtEz1BwkeJI91R5_A.ttf) format('truetype');
+}
+.chakra-petch{font-family:'Chakra Petch',sans-serif}
