@@ -1,5 +1,11 @@
 @font-face {
   font-family: 'Chakra Petch';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Chakra Petch Italic'), local('ChakraPetch-Italic'), url(https://fonts.gstatic.com/s/chakrapetch/v2/cIfkMapbsEk7TDLdtEz1BwkWmppiYL8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Chakra Petch';
   font-style: normal;
   font-weight: 400;
   src: local('Chakra Petch Regular'), local('ChakraPetch-Regular'), url(https://fonts.gstatic.com/s/chakrapetch/v2/cIf6MapbsEk7TDLdtEz1BwkWn6pl.ttf) format('truetype');
