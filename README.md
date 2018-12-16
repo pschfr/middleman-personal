@@ -13,4 +13,9 @@ Thanks to the [`middleman-gh-pages`](https://github.com/edgecase/middleman-gh-pa
 2. `rake publish` to build and publish to the `gh-pages` branch!
 
 # Other Notes
-- This depends on a .gitignored file called `secret.json`, so `secret.example.json` is provided as a template.
+- This depends on a .gitignored file called `data/secret.json`, so `data/secret.example.json` is provided as a template.
+- LiveReload is disabled for now, see middleman/middleman#2142.
+
+# Other Links
+- [Instagram API Gem](https://github.com/agilie/instagram_api_gem)
+- [timeago.js](https://github.com/hustcc/timeago.js)
