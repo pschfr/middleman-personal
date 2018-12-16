@@ -117,6 +117,7 @@ GEM
     public_suffix (3.0.3)
     rack (2.0.6)
     rails-assets-tachyons-sass (4.9.5)
+    rails-assets-timeago.js (3.0.0)
     rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
@@ -160,6 +161,7 @@ DEPENDENCIES
   middleman-minify-html
   middleman-sprockets
   rails-assets-tachyons-sass!
+  rails-assets-timeago.js!
   require_all
   svgeez (~> 2.0)
 

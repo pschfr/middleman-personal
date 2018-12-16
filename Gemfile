@@ -31,4 +31,5 @@ gem 'svgeez', '~> 2.0'
 # Gems from Rails-Assets.org
 source 'https://rails-assets.org' do
   gem 'rails-assets-tachyons-sass'
+  gem 'rails-assets-timeago.js'
 end
