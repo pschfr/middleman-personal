@@ -1,0 +1,21 @@
+// Global list of colors to be added to theme generator
+$colors: 'firebrick' 'rebeccapurple' 'cornflowerblue' 'seagreen';
+
+:root {
+	// Loop over the color list, then add it to the CSS vars
+	@each $color in $colors {
+		$i: index($colors, $color);
+		--color-#{$i}: #{$color};
+	}
+
+	// Count how many colors there were for the JS
+	--count: #{length($colors)};
+}
+
+// Loop over color list again, this time generating classes
+@each $color in $colors {
+	$i: index($colors, $color);
+	.theme-#{$i} {
+		background-color: var(--color-#{$i});
+	}
+}
