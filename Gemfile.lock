@@ -122,7 +122,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    require_all (2.0.0)
     ruby_dep (1.5.0)
     sass (3.7.2)
       sass-listen (~> 4.0.0)
@@ -162,7 +161,6 @@ DEPENDENCIES
   middleman-sprockets
   rails-assets-tachyons-sass!
   rails-assets-timeago.js!
-  require_all
   svgeez (~> 2.0)
 
 BUNDLED WITH

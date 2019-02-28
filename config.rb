@@ -1,7 +1,8 @@
 # Require global dependencies and helpers
-require 'require_all'
 require 'json'
-require_all 'lib'
+require_relative './lib/google_fonts.rb'
+require_relative './lib/last_fm.rb'
+require_relative './lib/svg_icons.rb'
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -31,8 +32,8 @@ page '/*.txt', layout: false
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
-helpers LastFmApiHelper
 helpers GoogleFontsHelper
+helpers LastFmApiHelper
 helpers SvgIconHelper
 
 # Instagram gem configuration

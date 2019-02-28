@@ -25,7 +25,6 @@ gem 'middleman-sprockets'
 # Dependencies for my custom helpers
 gem 'http'
 gem 'instagram_api_client'
-gem 'require_all'
 gem 'svgeez', '~> 2.0'
 
 # Gems from Rails-Assets.org
