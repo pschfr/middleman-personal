@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # I believe this has to be first
-gem 'middleman', '~> 4.2'
+gem 'middleman'
 
 # Middleman extensions are next
-gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-autoprefixer'
 
 # GitHub Pages support and config
 gem 'middleman-gh-pages'

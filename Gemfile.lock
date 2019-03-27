@@ -153,8 +153,8 @@ PLATFORMS
 DEPENDENCIES
   http
   instagram_api_client
-  middleman (~> 4.2)
-  middleman-autoprefixer (~> 2.7)
+  middleman
+  middleman-autoprefixer
   middleman-gh-pages
   middleman-meta-tags
   middleman-minify-html
