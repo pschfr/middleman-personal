@@ -55,7 +55,7 @@ module GoogleFontsHelper
   def google_font_preload_tags
     all_tags = ''
     FONT_URLS.each do |url|
-      all_tags << "<link rel=\"preload\" href=\"#{url}\" as=\"font\" type=\"font/ttf\" crossorigin=\"anonymus\">\n"
+      all_tags << %(<link rel="preload" href="#{url}" as="font" type="font/ttf" crossorigin="anonymous">)
     end
 
     all_tags
